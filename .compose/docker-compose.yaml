@@ -1,4 +1,4 @@
-version: "3.7"
+version: "3.8"
 services:
   db:
     image: "postgres"
@@ -10,4 +10,4 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ./volume/todo:data/postgres
+      - "/opt/volume/todo:/var/lib/postgresql/data"
