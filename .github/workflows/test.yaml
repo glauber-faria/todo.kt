@@ -1,0 +1,8 @@
+  name: Unit Test
+  on:
+    - main
+    - development
+  jobs:
+      runs-on: ubuntu-latest
+      steps:
+        - gradlew clean test
